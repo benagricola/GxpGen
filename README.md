@@ -5,16 +5,16 @@
    following replacements can be pasted into the config anywhere
    to insert a phone-specific value:
 
-   * %(phone_name)s
-   * %(sip_name)s
-   * %(sip_server)s
-   * %(config_server)s
-   * %(firmware_server)s
-   * %(sip_auth)s
-   * %(sip_pass)s
-   * %(auth_prepend)s
-   * %(auth_append)s
-   * %(xml_path)s
+   * `%(phone_name)s`
+   * `%(sip_name)s`
+   * `%(sip_server)s`
+   * `%(config_server)s`
+   * `%(firmware_server)s`
+   * `%(sip_auth)s`
+   * `%(sip_pass)s`
+   * `%(auth_prepend)s`
+   * `%(auth_append)s`
+   * `%(xml_path)s`
 
    It is also possible to add vars to the equipment and phones
    sections of the gxpgen.conf file, and these will be combined
@@ -22,9 +22,9 @@
    contents of the 'equipment' section and the specific 'phones'
    section that matches its' MAC.
 
-   *e.g. It would be possible to add "sip_port: 5061" to
+   *e.g. It would be possible to add `sip_port: 5061` to
    gxpgen.conf, and then refer to it in a template using 
-   "%(sip_port)s".*
+   `%(sip_port)s`.*
 
 2. Modify the gxpgen.conf file to contain the correct values for 
    your setup ('equipment' section settings apply for all phones,
@@ -33,7 +33,7 @@
    things like sip_auth and sip_pass, whereas equipment settings
    would be suitable for setting dns_server or the like.
 
-3. Execute ./gxpgen.py and check output.
+3. Execute `./gxpgen.py` and check output.
 
 4. Serve the newly created cfg directory via HTTP, and tell your
    phones to use that address as their configuration server. 
